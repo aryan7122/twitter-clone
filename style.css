@@ -1,0 +1,1001 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #f4f8fb;
+    display: flex;
+}
+
+header aside {
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    padding: 15px 0px 15px 30px;
+}
+
+header section {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+header aside .logo {
+    font-size: 30px;
+    color: #1ca1f1;
+}
+
+header aside ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+header aside ul li {
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+header aside ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header aside ul li a:hover {
+    color: #1ca1f1;
+}
+
+header aside ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* active class list items */
+
+
+header aside ul .li_active {
+    border-right: 3px solid #1ca1f1;
+}
+
+header aside ul .li_active a {
+    color: #1ca1f1;
+}
+
+header aside button {
+    margin-top: 40px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fdfdfd;
+    background: #1ca1f1;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header aside button:hover {
+    color: #fdfdfd;
+    background: #1c9ff187;
+
+}
+
+header section nav {
+    padding: 7px 5%;
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header section nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header section nav ul li {
+    padding: 3px 25px 3px 0px;
+}
+
+
+header section nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+
+header section nav ul li a:hover {
+    color: grey;
+}
+
+
+header section nav .search_bar {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 241, 241);
+    /* padding: 8px 15px; */
+    border-radius: 20px;
+}
+
+header section nav .search_bar input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    /* background: rgb(235, 235, 235); */
+    background: none;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+header section nav .search_bar .fa-solid {
+    font-size: 25px;
+}
+
+
+header section nav .user {
+    display: flex;
+    align-items: center;
+}
+
+header section nav .user h6 {
+    color: rgba(0, 0, 0, .7);
+    font-size: 12px;
+}
+
+header section nav .user img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+header section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: url(img/bg1.png) no-repeat center center/cover;
+    top: 10%;
+    opacity: .9;
+}
+
+header section .profilr_post_follow_bx {
+    position: relative;
+    top: 18%;
+    width: 100%;
+    height: 72%;
+    /* border: 1px dotted black; */
+    display: flex;
+    justify-content: center;
+}
+
+header section .profilr_post_follow_bx .profilr_bx {
+    width: 250px;
+    height: auto;
+    /* border: 1px solid greenyellow; */
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+    padding: 15px 10px 0px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .blue_tick_pc {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+}
+
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card h5 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card h6 {
+    color: rgba(0, 0, 0, .5);
+    font-size: 10px;
+    padding: 2px 0px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card address {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    /* border: 1px solid red; */
+    /* justify-content: center; */
+
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card address a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card address a:nth-child(2) {
+    margin-left: 10px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card p {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 5px;
+    color: rgba(0, 0, 0, .8);
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .data .data_card {
+    width: 33.33%;
+    text-align: center;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .data .data_card:nth-child(2) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .profile_card .data .data_card p,
+h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: .5px solid green; */
+    margin-top: 10px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx {
+    width: 115px;
+    height: 90px;
+    border: 1px solid rgb(237, 234, 234);
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s linear;
+    cursor: pointer;
+}
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:nth-child(1) {
+    background: #fff;
+    /* box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.157); */
+    border: 1px solid #fff;
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx i,
+h6 {
+    font-size: 20px;
+    color: #d5dade;
+    padding-top: 10px;
+    transition: .3s linear;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx h6 {
+    color: rgba(0, 0, 0, .6);
+    font-size: 12px;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:hover {
+    background: #fff;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, .2);
+    border: 1px solid #fff;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:hover h6 {
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:hover i {
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:nth-child(1) h6 {
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .profilr_bx .activity_bx .activity_card_bx:nth-child(1) i {
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx {
+    width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    display: flex;
+
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post {
+    width: 500px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    /* overflow: auto; */
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow {
+    width: 250px;
+    height: 100%;
+    /* background: #fff; */
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .2); */
+    /* border-radius: 8px; */
+    /* border: 1px dashed red; */
+    margin-left: 15px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav {
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 10%;
+    position: static;
+    /* position: relative; */
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav li {
+    border-bottom: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+    margin-right: 10px;
+    transition: .3s linear;
+    color: #000;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav li a {
+    color: #000;
+    padding: 17px 10px;
+    font-size: 14px;
+    transition: .1s linear;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav li:hover {
+    border-bottom: 3px solid #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav li a:hover {
+    color: rgb(72, 72, 72);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav li a:active {
+    padding: 0px 10px;
+    color: #1ca1f1;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav i {
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 13px;
+
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post nav i:hover {
+    color: rgb(0, 0, 0);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx {
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+    overflow: auto;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx::-webkit-scrollbar {
+    /* display: none; */
+    /* width: 5px;
+    
+    background: rgba(0, 0, 0, 0.615);
+    border-radius: 20px; */
+    visibility: hidden;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 12px 15px 0px 15px;
+    display: flex;
+}
+
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 12px 15px 0px 15px;
+    display: flex;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .home_profile_pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx {
+    position: relative;
+    width: 90%;
+    height: auto;
+    /* border: .5px solid rgba(0, 0, 0, 0.173); */
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx button {
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(28, 161, 241, .6);
+    background: none;
+    outline: none;
+    text-align: center;
+    color: #1ca1f1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+    top: 20px;
+    left: 0;
+    z-index: 99999999999999999;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx h6 {
+    padding: 0;
+    font-size: 15px;
+    color: #000;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 5px 0px 5px 8px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li:nth-child(2) {
+    margin-top: 20px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li i:nth-child(2) {
+    font-size: 13px;
+    color: #fff;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li i:nth-child(1) {
+    margin-right: 15px;
+    z-index: 2;
+    font-size: 13px;
+    color: #fff;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #1ca1f1;
+    border-radius: 50%;
+    left: 9px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li h6 {
+    font-size: 13px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li span {
+    font-size: 12px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li button {
+    font-size: 8px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx li div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx textarea {
+    font-size: 18px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    height: 30px;
+    max-height: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .select_reply_btn {
+    border: none;
+    padding: 0;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .who_can_reply_bx {
+    width: 250px;
+    top: 65%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .who_can_reply_bx p {
+    font-size: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+    margin-top: 10px;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .select_media{
+    display: flex;
+    align-items: center;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .select_media .media_card{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid greenyellow; */
+    margin-right: 8px;
+    color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .select_media .media_card  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    opacity: 0;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .Tweet_letter_count{
+    display: flex;
+    align-items: center;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .Tweet_letter_count h6{
+    padding: 0;
+    font-size: 10px;
+    color: rgba(0, 0, 0, .7);
+    margin-right: 10px;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .Tweet_letter_count button{
+    background: rgb(28,160,242, .5);
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    transition: .3s linear;
+    padding: 6px 15px;
+}
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .attach_media .Tweet_letter_count button:hover{
+    background:#1ca1f1;
+}
+
+/* javascript class */
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .home_page_first_bx .write_tweet_bx .show_bx_active {
+    display: unset;
+}
+
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .postprofile {
+    width: 10%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .postprofile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content {
+    width: 90%;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .retweet {
+    color: rgba(0, 0, 0, .3);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .retweet i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h5 img {
+    width: 12px;
+    margin-left: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h5 span {
+    color: rgba(0, 0, 0, .6);
+    margin-left: 10px;
+}
+
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h6 {
+    font-size: 11px;
+    color: #474747;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h6 i {
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content h3 {
+    font-size: 11px;
+    font-weight: 500;
+    word-break: break-all;
+    margin-top: 10px;
+}
+
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .retweet_content_bx {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .retweet_content_bx .user_name_time h5 img:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card:nth-child(2) {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card:nth-child(3) {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card:nth-child(3) i {
+    color: red;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card i,
+span {
+    color: grey;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .tweet_card_soical_data .tweet_soical_card span {
+    margin-left: 3px;
+    font-weight: 600;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .img_post_bx {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .img_post_bx img {
+    margin-right: 4px;
+    border-radius: 3px;
+    width: 33%;
+    height: auto;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .img_post_bx #fu {
+    width: 100%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you nav {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you nav h6 {
+    font-size: 13px;
+    color: #000;
+    padding: 0;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx {
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    height: auto;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx li a span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #777777;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .rate button {
+    outline: none;
+    background: none;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, .6);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .rate button:hover {
+    color: rgb(0, 0, 0);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .rate button i {
+    margin-right: 5px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .rate .interest {
+    height: 0;
+    overflow: hidden;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .see_more {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 0px;
+    text-align: center;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .trend_for_you .trend_bx .see_more:hover {
+    color: rgb(0, 0, 0);
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow {
+    margin-top: 15px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 15px 0px 15px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 15px 0px 15px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 60%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name {
+    margin-left: 10px;
+    min-width: 50%;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow h6 {
+    color: #000;
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name .user_name_follow img {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx .follow_profile_name .user_name p {
+    font-size: 11px;
+    color: rgba(0, 0, 0, .4);
+    font-weight: 600;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx button {
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    background: #1ca1f1;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 11px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx button:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .4);
+    background: #009dff;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .follow_bx button:active {
+    background: gray;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .SEE_MORE {
+    background: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .SEE_MORE:hover {
+    color: rgba(0, 0, 0);
+}
