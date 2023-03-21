@@ -93,3 +93,16 @@ tweet_text_area.addEventListener('keyup', () => {
         }
 
 })
+
+
+
+let fa_bars = document.getElementsByClassName('fa-bars')[0];
+fa_bars.addEventListener('click', ()=> {
+    menu_show.style.zIndex = '10';
+})
+
+let fa_xmark = document.getElementsByClassName('fa-xmark')[0];
+fa_xmark.addEventListener('click', () => {
+    menu_show.style.zIndex = '-3';
+})
+

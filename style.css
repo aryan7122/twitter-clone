@@ -999,3 +999,75 @@ header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follo
 header section .profilr_post_follow_bx .post_follow_bx .follow .you_should_follow .SEE_MORE:hover {
     color: rgba(0, 0, 0);
 }
+
+@media only screen and (max-width: 1250px) {
+    header section{
+        margin: auto;
+    }
+    header section .profilr_post_follow_bx{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    }
+        header section .profilr_post_follow_bx .profilr_bx{
+            width: 80%;
+            margin: auto;
+        }
+        header section .profilr_post_follow_bx .post_follow_bx{
+            margin-top: 5%;
+            /*  */
+        }
+    header section .profilr_post_follow_bx .post_follow_bx{
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1100px) {
+header aside button{
+    padding: 10px 30px;
+}
+}
+
+                header section nav ul #menu_bx {
+                    /* border: 1px solid rgb(47, 0, 255); */
+                    color: #ffffff;
+                }
+              header aside  #menu_bx{
+                color: #fff;
+              }
+@media only screen and (max-width: 920px) {
+    #menu_show{
+        z-index: -3 ;
+        width: 50%;
+        position: absolute;
+        border: 1px solid red;
+    }
+        header aside ul li{
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+    header section{
+        width: 100%;
+    }
+        header section nav ul #menu_bx{
+        color: #000000;
+    }
+    header aside #menu_bx{
+        position: absolute;
+        left: 35%;
+        color: #000;
+    }
+}
+@media only screen and (max-width: 780px) {
+header section .profilr_post_follow_bx .post_follow_bx {
+        display: block;
+    }
+    header section .profilr_post_follow_bx .post_follow_bx .post{
+        width: 100%;
+    }
+        header section .profilr_post_follow_bx .post_follow_bx .follow{
+            width: 100%;
+            padding: 10%;
+        }
+}
