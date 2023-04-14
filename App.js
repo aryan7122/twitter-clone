@@ -84,7 +84,7 @@ tweet_text_area.addEventListener('keyup', () => {
     let a = tweet_text_area.value.length;
     let b = parseInt((a / 2));
     let c = (500 - b);
-    text_limit.innerText = c + " word can write";
+    text_limit.innerText = c + " ";
 
         if (c === 0) {
             text_limit.style.color = 'red';
